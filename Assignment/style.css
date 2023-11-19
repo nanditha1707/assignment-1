@@ -1,0 +1,92 @@
+header,footer{
+    background-color: #516c92af;
+    padding: 5px;
+    text-align: center;
+    font-size: 15px;
+    color: #ffffff;
+}
+
+nav{
+    overflow: hidden;
+    background-color: #5B6A84;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+nav a{
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+footer {
+    margin-top: 20px
+}
+
+p {
+    margin-bottom: 15px
+    font-size 100px
+}
+
+contact {
+    text-align: center;
+    
+    
+}
+
+button {
+    background-color: #516c92af;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px; 
+}
+
+text img {
+    max-width: 100%; 
+    margin-right: 20px;
+     
+}
+
+image-container {
+    display: flex; /* Use flexbox for flexible layout */
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px; 
+    flex-wrap: wrap; 
+    text-decoration: none;
+}
+
+image-container img {
+    width: 150px; /* Set the desired width for each image */
+    height: auto; 
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+image-container a {
+    text-decoration: none;
+}
+
+.image-text {
+    text-align: center;
+    text-decoration: none;
+}
