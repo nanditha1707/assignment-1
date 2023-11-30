@@ -41,6 +41,82 @@ nav a:hover{
     background-color: #6e819c;
     color:#ffffff;
 }
+
+.content{
+    display: flex;
+    justify-content: center;
+}
+
+.content img{
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.content div{
+    padding: 20px;
+    max-width: 60%;
+    color: #244169;
+}
+
+.content div p{
+    font-size: 18px;
+}
+
+.contact{
+    text-align: center;
+    color: #212d3e;
+}
+
+.contact p {
+    text-align: center;
+    margin-left: 325px; 
+    margin-right: 325px; 
+    color: #244169;
+    font-size: 18px;
+}
+
+.image-container {
+    display: flex; /* Use flexbox for flexible layout */
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px; 
+    flex-wrap: wrap; 
+    text-decoration: none;
+}
+
+.image-container img {
+    width: 150px; /* Set the desired width for each image */
+    height: auto; 
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.image-container a {
+    color: #244169;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 footer {
     background-color: #516c92af;
     padding: 5px;
@@ -50,9 +126,7 @@ footer {
     margin-top: 20px
 }
 
-footer p{
-    text-align: left;
-}
+
 footer a{
     text-align: right;
     color: #ffffff;
@@ -85,64 +159,14 @@ button {
     border-radius: 10px;
 }
 
-p {
-    margin-bottom: 15px
-    font-size 100px
-}
-
-.contact{
-    text-align: center;
-    color: #212d3e;
-}
 
 
-.contact p {
-    text-align: center;
-    margin-left: 325px; 
-    margin-right: 325px; 
-    color: #244169;
-    font-size: 18px;
-}
 
 
-text {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px; 
-}
 
-text img {
-    max-width: 100%; 
-    margin-right: 20px;
-     
-}
 
-.image-container {
-    display: flex; /* Use flexbox for flexible layout */
-    justify-content: center;
-    gap: 50px;
-    margin-top: 20px; 
-    flex-wrap: wrap; 
-    text-decoration: none;
-}
 
-.image-container img {
-    width: 150px; /* Set the desired width for each image */
-    height: auto; 
-    border-radius: 10px;
-    text-decoration: none;
-}
 
-.image-container a {
-    color: #244169;
-    text-align: center;
-    text-decoration: none;
-}
-
-.image-container a:hover{
-    text-decoration-line: #244169;
-}
 
 .modal {
     display: none;
@@ -166,9 +190,16 @@ text img {
     margin-bottom: 10px;
 }
 
+.modal-content h2, p{
+    text-align: center;
+}
+
+
+
 .close {
     color: #aaa;
     float: right;
+    margin-top: 1px;
     font-size: 28px;
     font-weight: bold;
 }
@@ -181,8 +212,20 @@ text img {
 
 .modal-content form {
     text-align: center;
+    
 }
 
 .modal-content form button {
     margin-top: 10px; /* Add some top margin for spacing */
+}
+
+
+.modal-content form input { 
+    border-radius: 10px; 
+    padding: 10px; 
+    overflow: none;
+}
+
+.modal-content form label { 
+    font-size: 18px;
 }
