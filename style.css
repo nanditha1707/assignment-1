@@ -56,10 +56,9 @@ nav a:hover{
 
 .content {
     display: flex;
-    flex-wrap: wrap; /* Allow content to wrap to the next line */
+    flex-wrap: wrap; 
     justify-content: center;
 }
-
 
 .content {
     display: flex;
@@ -84,7 +83,6 @@ nav a:hover{
     color: #244169;
 }
 
-
 .contact {
     text-align: center;
     color: #212d3e;
@@ -96,17 +94,14 @@ nav a:hover{
     text-align: left;
 }
 
-
-
-
 @media only screen and (max-width: 768px) {
     .content img {
-        width: 100%; /* Make the image full width on smaller screens */
-        min-width: auto; /* Reset the min-width for flexibility */
+        width: 100%; 
+        min-width: auto; 
     }
 
     .content div {
-        max-width: 100%; /* Allow the text content to occupy the full width */
+        max-width: 100%; 
     }
 }
 
@@ -116,15 +111,14 @@ nav a:hover{
 }
 
 .contact div {
-    max-width: 700px; /* Adjust the maximum width as needed */
-    margin: 0 auto; /* Center the div horizontally */
+    max-width: 700px; 
+    margin: 0 auto;
     color: #244169;
     font-size: 18px;
 }
 
-
 .image-container {
-    display: flex; /* Use flexbox for flexible layout */
+    display: flex; 
     justify-content: center;
     gap: 50px;
     margin-top: 20px; 
@@ -133,7 +127,7 @@ nav a:hover{
 }
 
 .image-container img {
-    width: 150px; /* Set the desired width for each image */
+    width: 150px;
     height: auto; 
     border-radius: 10px;
     text-decoration: none;
@@ -148,16 +142,15 @@ nav a:hover{
 @media only screen and (max-width: 768px) {
     .image-container {
         flex-direction: column; 
-        align-items: center; /* Center items horizontally on smaller screens */
-        gap: 20px; /* Adjust the gap for better spacing on smaller screens */
+        align-items: center; 
+        gap: 20px;
     }
 
     .image-container img {
-        width: 100%; /* Make the image full width on smaller screens */
-        max-width: none; /* Reset max-width for flexibility */
+        width: 100%; 
+        max-width: none; 
     }
 }
-
 
 .review {
     display: flex;
