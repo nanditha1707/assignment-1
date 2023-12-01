@@ -42,33 +42,44 @@ nav a:hover{
     color:#ffffff;
 }
 
-.content{
+.content {
     display: flex;
+    flex-wrap: wrap; /* Allow content to wrap to the next line */
     justify-content: center;
 }
 
-.content img{
+.content img {
     margin-top: 10px;
     margin-left: 10px;
     border-radius: 10px;
+    margin-bottom: 10px;
+    width: 550px;
+    min-width: 300px;
+    height: auto;
 }
 
-.content div{
+.content div {
+    box-sizing: border-box; /* Include padding and border in the width calculation */
+    flex: 1; /* Allow the div to grow to fill available space */
     padding: 20px;
     max-width: 60%;
     color: #244169;
+    width: 100%
 }
 
-.content div p{
+.content div p {
     font-size: 18px;
+    text-align: left;
+    
 }
+
 
 .contact{
     text-align: center;
     color: #212d3e;
 }
 
-.contact p {
+.contact div {
     text-align: center;
     margin-left: 325px; 
     margin-right: 325px; 
@@ -92,12 +103,94 @@ nav a:hover{
     text-decoration: none;
 }
 
-.image-container a {
+.image-container p,.image-container a {
     color: #244169;
     text-align: center;
     text-decoration: none;
 }
 
+.review {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+}
+
+.review-item {
+    box-sizing: border-box;
+    flex: 30%;
+    padding: 20px;
+    color: #244169;
+}
+
+.review-item img {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.review-item div {
+    text-align: center;
+}
+
+.review-item h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.review-item p {
+    font-size: 18px;
+}
+
+@media (max-width: 768px){
+    .review-item {
+        flex: 0 0 100%; 
+    }
+}
+
+.outlets  {
+   color:#244169;
+}
+
+.outlet-item {
+    list-style: none; 
+    margin-bottom: 20px; 
+}
+
+.outlet-item p {
+    margin: 5px 0;
+}
+
+.outlet-item a {
+    display: block; 
+    color: #244169; 
+    text-decoration: none; 
+    font-weight: bold;
+}
+
+.outlet-item a:hover {
+    text-decoration: underline; 
+}
+
+.FAQ {
+    color: #244169;
+    line-height: 1.6;
+    margin-left: 10px;
+}
+
+.FAQ p {
+    margin-bottom: 20px;
+}
+
+.question {
+    font-weight: bold;
+    margin-left: 20px; /* Added margin to the left */
+}
+
+.number {
+    font-weight: bold;
+    margin-right: 10px;
+}
 
 
 
@@ -117,33 +210,65 @@ nav a:hover{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*{
+    box-sizing: border-box;
+}
+  
 footer {
     background-color: #516c92af;
-    padding: 5px;
-    text-align: center;
-    font-size: 15px;
     color: #ffffff;
-    margin-top: 20px
+    padding: 20px;
+}
+  
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
 }
 
-
-footer a{
-    text-align: right;
-    color: #ffffff;
-    text-decoration: none;
-    display: block; 
-    font-size: 18px;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.footer-section {
+.footer-column {
     flex: 1;
-    text-align: left;
-    padding: 0 20px;
+    text-align: center;
 }
 
+.footer-link {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+   
+.newsletter {
+    text-align: center;
+    padding: 5px;
+    font-size: 15px;
+    margin-top: 15px;
+    margin-bottom: 15x;
+}
+  
 
 button {
     background-color: #516c92af;
@@ -181,7 +306,7 @@ button {
 }
 
 .modal-content {
-    background-color: #fefefe;
+    background-color: rgb(255, 255, 255);
     margin: 15% auto;
     padding: 20px;
     width: 25%;
@@ -190,11 +315,10 @@ button {
     margin-bottom: 10px;
 }
 
-.modal-content h2, p{
+.modal-content h2, .modal-content p{
     text-align: center;
+    color: #244169;
 }
-
-
 
 .close {
     color: #aaa;
@@ -211,14 +335,12 @@ button {
 }
 
 .modal-content form {
-    text-align: center;
-    
+    text-align: center; 
 }
 
 .modal-content form button {
-    margin-top: 10px; /* Add some top margin for spacing */
+    margin-top: 10px; 
 }
-
 
 .modal-content form input { 
     border-radius: 10px; 
@@ -229,3 +351,8 @@ button {
 .modal-content form label { 
     font-size: 18px;
 }
+
+
+
+
+

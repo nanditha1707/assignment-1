@@ -80,19 +80,29 @@
                 <a href="https://www.pinterest.com/search/pins/?q=bakery%20food&rs=typed" target="_blank"><p>others</p></a>
             </div>
         </section>
-            
+    
         <section id="footer">
             <footer>
-                <p><h3>NEWSLETTER</h3></p>
-                <p><h4>Subscribe to receive updates and more.</h4></p>
-                <p><button onclick="openModal()">SUBSCRIBE NOW</button></p>
-                <a href="https://www.example.com" target="_blank">Instagram</a>
-                <a href="https://www.example.com" target="_blank">TikTok</a>
-                <a href="https://www.example.com" target="_blank">Facebook</a>
-                <a href="https://www.example.com" target="_blank">Twitter</a>
+                <div class="footer-columns">
+                    <div class="footer-column">
+                        <a href="https://www.instagram.com/" target="_blank" class="footer-link">Instagram</a>
+                        <a href="https://www.facebook.com" target="_blank" class="footer-link">Facebook</a>    
+                    </div>
+                    <div class="footer-column">
+                        <div class="newsletter">
+                            <h3>NEWSLETTER</h3>
+                            <h4>Subscribe to receive updates and more.</h4>
+                            <button onclick="openModal()">SUBSCRIBE NOW</button>
+                        </div>
+                    </div>
+                    <div class="footer-column">
+                        <a href="https://www.twitter.com" target="_blank" class="footer-link">Twitter</a>
+                        <a href="https://www.tiktok.com" target="_blank" class="footer-link">TikTok</a>
+                    </div>
+                </div>
             </footer>
         </section>
-
+        
         <section id="modal" class="modal">
             <div class="modal-content">
                 <div class="close" onclick="closeModal()">&times;</div>
@@ -107,5 +117,6 @@
                 </form>
             </div>
         </section>
+        
     </body>
 </html>

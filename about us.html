@@ -23,7 +23,7 @@
         </nav>
     
         <section class="content">
-            <img src="sugar.jpg" >
+            <img src="sugarr.jpg" >
             <div>
                 <h1> Two Years of Sweet Success!</h1>
                 <p>Welcome to Nani's Bakery, where passion meets resilience in the heart of challenging times. Founded in the midst of the COVID-19 pandemic, our bakery has been a labor of love, determination, and a dash of magic. As we mark our two-year milestone, we reflect on the journey that brought Nani's Bakery to life.</p>
@@ -43,16 +43,26 @@
 
         <section id="footer">
             <footer>
-                <p><h3>NEWSLETTER</h3></p>
-                <p><h4>Subscribe to receive updates and more.</h4></p>
-                <p><button onclick="openModal()">SUBSCRIBE NOW</button></p>
-                <a href="https://www.example.com" target="_blank">Instagram</a>
-                <a href="https://www.example.com" target="_blank">TikTok</a>
-                <a href="https://www.example.com" target="_blank">Facebook</a>
-                <a href="https://www.example.com" target="_blank">Twitter</a>
+                <div class="footer-columns">
+                    <div class="footer-column">
+                        <a href="https://www.instagram.com/" target="_blank" class="footer-link">Instagram</a>
+                        <a href="https://www.facebook.com" target="_blank" class="footer-link">Facebook</a>    
+                    </div>
+                    <div class="footer-column">
+                        <div class="newsletter">
+                            <h3>NEWSLETTER</h3>
+                            <h4>Subscribe to receive updates and more.</h4>
+                            <button onclick="openModal()">SUBSCRIBE NOW</button>
+                        </div>
+                    </div>
+                    <div class="footer-column">
+                        <a href="https://www.twitter.com" target="_blank" class="footer-link">Twitter</a>
+                        <a href="https://www.tiktok.com" target="_blank" class="footer-link">TikTok</a>
+                    </div>
+                </div>
             </footer>
         </section>
-
+        
         <section id="modal" class="modal">
             <div class="modal-content">
                 <div class="close" onclick="closeModal()">&times;</div>
@@ -67,6 +77,6 @@
                 </form>
             </div>
         </section>
-    </body>
-    
+        
+    </body>  
 </html>

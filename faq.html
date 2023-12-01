@@ -17,18 +17,83 @@
             <a href="menu.html">Menu</a>
             <a href="review.html">Reviews</a>
             <a href="contact%20us.html">Contact Us</a>  
-            <a href="faq.html">FAQs</a>
+            <a>FAQs</a>
             <a href= #footer >Newsletter</a>
         </nav>
-       
+
+        <section class="FAQ">
+            <p class="number">1. Do you offer gluten-free options?</p>
+            <p class="answer">Yes, we have a selection of gluten-free items. Please ask our staff for assistance.</p>
+        
+            <p class="number">2. What are your most popular pastries?</p>
+            <p class="answer">Our customers love our [mention popular items like croissants, cinnamon rolls, etc.]. They are freshly baked and available daily.</p>
+        
+            <p class="number">3. Can I place a custom cake order for a special occasion?</p>
+            <p class="answer">Absolutely! We specialize in custom cakes for various occasions. Contact us in advance to discuss your preferences and design ideas.</p>
+        
+            <p class="number">4. Do you use organic or locally sourced ingredients?</p>
+            <p class="answer">We strive to use high-quality ingredients, and whenever possible, we source locally and use organic products to create our delicious treats.</p>
+        
+            <p class="number">5. Are there vegan options available?</p>
+            <p class="answer">Yes, we offer a variety of vegan pastries and desserts. Check our menu or ask our staff for the current vegan selections.</p>
+        
+            <p class="number">6. Do you provide catering services for events?</p>
+            <p class="answer">Yes, we offer catering services for events of all sizes. Contact us for more information and to discuss your catering needs.</p>
+        
+            <p class="number">7. What is the shelf life of your products?</p>
+            <p class="answer">Our products are made fresh daily, and most are best enjoyed within a day or two. For specific shelf life information, please ask our staff.</p>
+        
+            <p class="number">8. Can I pre-order pastries for pickup?</p>
+            <p class="answer">Certainly! Pre-orders are welcomed for your convenience. Contact us or visit our website to place an order.</p>
+        
+            <p class="number">9. Do you have a loyalty program or rewards program?</p>
+            <p class="answer">Yes, we offer a loyalty program for our valued customers. Earn points with each purchase and enjoy exclusive rewards.</p>
+        
+            <p class="number">10. Are gift cards available?</p>
+            <p class="answer">Yes, we offer gift cards in various denominations. They make perfect gifts for friends and family who appreciate delicious baked goods.</p>
+        
+            <p class="number">11. Do you host baking classes or workshops?</p>
+            <p class="answer">Yes, we occasionally host baking classes and workshops. Follow our social media or check our website for upcoming events.</p>
+        
+            <p class="number">12. What precautions are you taking for food allergies?</p>
+            <p class="answer">We take food allergies seriously. Please inform our staff about any allergies, and we will do our best to accommodate your needs.</p>
+        </section>
         <section id="footer">
             <footer>
-                <p><h3>NEWSLETTER</h3></p>
-                <p><h4>Subscribe to receive updates and more.</h4></p>
-                <p><input type="email" placeholder="Enter your email address"></p>
-                <p><button>SUBSCRIBE</button></p>
+                <div class="footer-columns">
+                    <div class="footer-column">
+                        <a href="https://www.instagram.com/" target="_blank" class="footer-link">Instagram</a>
+                        <a href="https://www.facebook.com" target="_blank" class="footer-link">Facebook</a>    
+                    </div>
+                    <div class="footer-column">
+                        <div class="newsletter">
+                            <h3>NEWSLETTER</h3>
+                            <h4>Subscribe to receive updates and more.</h4>
+                            <button onclick="openModal()">SUBSCRIBE NOW</button>
+                        </div>
+                    </div>
+                    <div class="footer-column">
+                        <a href="https://www.twitter.com" target="_blank" class="footer-link">Twitter</a>
+                        <a href="https://www.tiktok.com" target="_blank" class="footer-link">TikTok</a>
+                    </div>
+                </div>
             </footer>
         </section>
-
+        
+        <section id="modal" class="modal">
+            <div class="modal-content">
+                <div class="close" onclick="closeModal()">&times;</div>
+                <h2>Subscribe to Our Newsletter</h2>
+                <p>Interested to know about our monthly and weekly specials? Subscribe here and never miss our specials.</p>
+                <form>
+                    <p><label for="email">Email:</label></p>
+                    <input type="email" id="email" name="email" required>
+                    <p><label for="password">Password:</label></p>
+                    <input type="password" id="password" name="password" required>
+                    <button type="button" onclick="submitForm()">Subscribe Now</button>
+                </form>
+            </div>
+        </section>
+        
     </body>
 </html>

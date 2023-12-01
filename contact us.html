@@ -33,14 +33,43 @@
                 <p>To join the team, view and apply for current available positions <a href="job-opportunities.html">here</a>.</p>       
             </div> 
         </section>
-    
+
         <section id="footer">
             <footer>
-                <p><h3>NEWSLETTER</h3></p>
-                <p><h4>Subscribe to receive updates and more.</h4></p>
-                <p><input type="email" placeholder="Enter your email address"></p>
-                <p><button>SUBSCRIBE</button></p>
+                <div class="footer-columns">
+                    <div class="footer-column">
+                        <a href="https://www.instagram.com/" target="_blank" class="footer-link">Instagram</a>
+                        <a href="https://www.facebook.com" target="_blank" class="footer-link">Facebook</a>    
+                    </div>
+                    <div class="footer-column">
+                        <div class="newsletter">
+                            <h3>NEWSLETTER</h3>
+                            <h4>Subscribe to receive updates and more.</h4>
+                            <button onclick="openModal()">SUBSCRIBE NOW</button>
+                        </div>
+                    </div>
+                    <div class="footer-column">
+                        <a href="https://www.twitter.com" target="_blank" class="footer-link">Twitter</a>
+                        <a href="https://www.tiktok.com" target="_blank" class="footer-link">TikTok</a>
+                    </div>
+                </div>
             </footer>
         </section>
+        
+        <section id="modal" class="modal">
+            <div class="modal-content">
+                <div class="close" onclick="closeModal()">&times;</div>
+                <h2>Subscribe to Our Newsletter</h2>
+                <p>Interested to know about our monthly and weekly specials? Subscribe here and never miss our specials.</p>
+                <form>
+                    <p><label for="email">Email:</label></p>
+                    <input type="email" id="email" name="email" required>
+                    <p><label for="password">Password:</label></p>
+                    <input type="password" id="password" name="password" required>
+                    <button type="button" onclick="submitForm()">Subscribe Now</button>
+                </form>
+            </div>
+        </section>
+        
     </body>
 </html>

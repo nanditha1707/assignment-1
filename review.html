@@ -3,6 +3,7 @@
     <head>
         <link rel="stylesheet" href="Normalize.css">
         <link rel="stylesheet" href="style.css">
+        <script src="script.jss" defer></script>
     </head>
 
     <body>
@@ -21,30 +22,89 @@
             <a href= #footer >Newsletter</a>
         </nav>
 
-        <section class="image-container">
-            <div>
-                <a><img src="review1.jpg"></a>
-                <a><p>REVIEW</p></a>      
+        
+
+        <section class="review">
+            <div class="review-item">
+                <img src="review1.jpg">
+                <div>
+                    <h1>Review from Alexia Lee</h1>
+                    <p>Got it for my niece's 15th birthday.</p>
+                </div>
             </div>
-            <div>
-                <a><img src="review2.jpg"></a>
-                <a><p>REVIEW</p></a>
+            <div class="review-item">
+                <img src="review2.jpg">
+                <div>
+                    <h1>Review from Lando Hamilton</h1>
+                    <p>My fiance loved this cake at our proposal, very moist and chocolaty, looks very minimal and perfectly fit the proposal aesthetic. Will be ordering from them again for our wedding.</p>
+                </div>
             </div>
-            <div>
-                <a><img src="review3.jpg"></a>
-                <a><p>REVIEW</p></a>
+            <div class="review-item">
+                <img src="review3.jpg">
+                <div>
+                    <h1>Review Title</h1>
+                    <p>Review text goes here.</p>
+                </div>
+            </div>
+            <div class="review-item">
+                <img src="review4.jpg">
+                <div>
+                    <h1>Another Review</h1>
+                    <p>"Chewy and chocolatey bliss! These brownies are a decadent delight, satisfying every sweet tooth. Pure indulgence in every bite."</p>
+                </div>
+            </div>
+            <div class="review-item">
+                <img src="review5.jpg">
+                <div>
+                    <h1>Yet Another Review</h1>
+                    <p>This is another review for the second row.</p>
+                </div>
+            </div>
+            <div class="review-item">
+                <img src="review6.jpg">
+                <div>
+                    <h1>One More Review</h1>
+                    <p>This is another review for the second row.</p>
+                </div>
             </div>
         </section>
         
-           
         <section id="footer">
             <footer>
-                <p><h3>NEWSLETTER</h3></p>
-                <p><h4>Subscribe to receive updates and more.</h4></p>
-                <p><input type="email" placeholder="Enter your email address"></p>
-                <p><button>SUBSCRIBE</button></p>
+                <div class="footer-columns">
+                    <div class="footer-column">
+                        <a href="https://www.instagram.com/" target="_blank" class="footer-link">Instagram</a>
+                        <a href="https://www.facebook.com" target="_blank" class="footer-link">Facebook</a>    
+                    </div>
+                    <div class="footer-column">
+                        <div class="newsletter">
+                            <h3>NEWSLETTER</h3>
+                            <h4>Subscribe to receive updates and more.</h4>
+                            <button onclick="openModal()">SUBSCRIBE NOW</button>
+                        </div>
+                    </div>
+                    <div class="footer-column">
+                        <a href="https://www.twitter.com" target="_blank" class="footer-link">Twitter</a>
+                        <a href="https://www.tiktok.com" target="_blank" class="footer-link">TikTok</a>
+                    </div>
+                </div>
             </footer>
         </section>
+        
 
+        <section id="modal" class="modal">
+            <div class="modal-content">
+                <div class="close" onclick="closeModal()">&times;</div>
+                <h2>Subscribe to Our Newsletter</h2>
+                <p>Interested to know about our monthly and weekly specials? Subscribe here and never miss our specials.</p>
+                <form>
+                    <p><label for="email">Email:</label></p>
+                    <input type="email" id="email" name="email" required>
+                    <p><label for="password">Password:</label></p>
+                    <input type="password" id="password" name="password" required>
+                    <button type="button" onclick="submitForm()">Subscribe Now</button>
+                </form>
+            </div>
+        </section>
     </body>
 </html>
