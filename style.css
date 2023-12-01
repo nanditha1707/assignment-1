@@ -16,6 +16,18 @@ header a{
     text-decoration: none;
 }
 
+.pic {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+
+.pic img {
+    max-width: 100%; 
+    height: auto;
+    margin: 0px;
+}
+
 nav{
     overflow: hidden;
     background-color: #5B6A84;
@@ -48,6 +60,12 @@ nav a:hover{
     justify-content: center;
 }
 
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .content img {
     margin-top: 10px;
     margin-left: 10px;
@@ -59,33 +77,51 @@ nav a:hover{
 }
 
 .content div {
-    box-sizing: border-box; /* Include padding and border in the width calculation */
-    flex: 1; /* Allow the div to grow to fill available space */
+    box-sizing: border-box;
+    flex: 1;
     padding: 20px;
     max-width: 60%;
     color: #244169;
-    width: 100%
+}
+
+
+.contact {
+    text-align: center;
+    color: #212d3e;
+    margin: bottom 10px; ;
 }
 
 .content div p {
     font-size: 18px;
     text-align: left;
-    
 }
 
 
-.contact{
+
+
+@media only screen and (max-width: 768px) {
+    .content img {
+        width: 100%; /* Make the image full width on smaller screens */
+        min-width: auto; /* Reset the min-width for flexibility */
+    }
+
+    .content div {
+        max-width: 100%; /* Allow the text content to occupy the full width */
+    }
+}
+
+.contact {
     text-align: center;
     color: #212d3e;
 }
 
 .contact div {
-    text-align: center;
-    margin-left: 325px; 
-    margin-right: 325px; 
+    max-width: 700px; /* Adjust the maximum width as needed */
+    margin: 0 auto; /* Center the div horizontally */
     color: #244169;
     font-size: 18px;
 }
+
 
 .image-container {
     display: flex; /* Use flexbox for flexible layout */
@@ -108,6 +144,20 @@ nav a:hover{
     text-align: center;
     text-decoration: none;
 }
+
+@media only screen and (max-width: 768px) {
+    .image-container {
+        flex-direction: column; 
+        align-items: center; /* Center items horizontally on smaller screens */
+        gap: 20px; /* Adjust the gap for better spacing on smaller screens */
+    }
+
+    .image-container img {
+        width: 100%; /* Make the image full width on smaller screens */
+        max-width: none; /* Reset max-width for flexibility */
+    }
+}
+
 
 .review {
     display: flex;
